@@ -5,52 +5,14 @@
 
 <head class="meta">
  
- <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+
+<link type="text/css" rel="stylesheet" href="style1.css">
    
-    <link rel="icon" href="favicon.ico">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    
-    <style>
-        
-        
-        
-        body {
-            
-            margin: 0px;
-            padding: 0px; 
-        }
-        
-       
-        
-        div {
-            
-            float: left;
-            text-align: left;
-            height: 245;
-            border: solid 4px cyan;
-        }
-        
-        #header {
-            
-            width: 100%;
-            border: 0px;
-            height: 50px;
-        }
-        
-        #main {
-            
-            background-color: greenyellow;
-            height: 500px;
-        }
-        
-        .guess_box {
-            
-            height: 245px;
-        }
-    
-    </style>
-   
+<link rel="icon" href="favicon.ico">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+ 
 <title> Drugie zadanie </title> 
   
   
@@ -63,56 +25,39 @@
            
           
            
-           <div id="header">
+<div id="header">
            
-               <h2> Pokaż mi kudłatego przujaciela na dziś</h2>
-               </div>
+   <h2> Promocja skacz z radości </h2>
+</div>
                
-               <div id="main">
+<div id="main">
                    
                    
-                 <div class="guess_box"><img src="pobrane.jpeg" class="obraz" alt="obrazek"> </div>
-            <div class="guess_box"><img src="pobrane.jpeg" class="obraz" alt="obrazek"> </div>
-             <div class="guess_box"><img src="pobrane.jpeg" class="obraz" alt="obrazek"> </div>
-                   <div class="guess_box"><img src="pobrane.jpeg" class="obraz" alt="obrazek"> </div>
+<div class="guess_box ol"><img src="pobrane.jpeg" class="obraz" alt="obrazek"> 
+</div>
+<div class="guess_box ol"><img src="pobrane.jpeg" class="obraz" alt="obrazek"> 
+</div>
+
+<div class="guess_box ol"><img src="pobrane.jpeg" class="obraz" alt="obrazek">
+</div>
+<div class="guess_box ol"><img src="pobrane.jpeg" class="obraz" alt="obrazek"> 
+</div>
                    
                    
-               </div>
+</div>
           
     
         
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script>
-               
-            
-            $(document).ready(function(){
-                
-                
-                $(".guess_box").click(function(){
-                    
-                    
-                var discount = Math.floor((Math.random()*5) + 5);
-                var discount_msg = "<p>Twoj rabat to "+ discount + "%</p>";
-                alert(discount_msg);
-                $(this).append(discount_msg);
-                    
-                
-                    
-                });// koniec funkcji click 
-                
-                
-            }); //koniec dokumentu ready 
-          
-               
-       </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script  src="js2.js"></script>
+       
        
         
         
         
         
         
-        
-    </body>
+ </body>
 
 </html>
