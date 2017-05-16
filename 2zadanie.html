@@ -91,15 +91,15 @@
                 
                 $(".guess_box").click(function(){
                     
-                   alert("Zostałęm kilinięty"); 
+                    
+                var discount = Math.floor((Math.random()*5) + 5);
+                var discount_msg = "<p>Twoj rabat to "+ discount + "%</p>";
+                alert(discount_msg);
+                $(this).append(discount_msg);
+                    
+                
                     
                 });// koniec funkcji click 
-                
-                
-                
-                
-                
-                
                 
                 
             }); //koniec dokumentu ready 
