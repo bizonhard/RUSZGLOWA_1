@@ -43,6 +43,11 @@
             background-color: greenyellow;
             height: 500px;
         }
+        
+        .guess_box {
+            
+            height: 245px;
+        }
     
     </style>
    
@@ -66,10 +71,10 @@
                <div id="main">
                    
                    
-                 <div id="picframe"><img src="pobrane.jpeg" class="obraz" alt="obrazek"> </div>
-            <div id="picframe"><img src="pobrane.jpeg" class="obraz" alt="obrazek"> </div>
-             <div id="picframe"><img src="pobrane.jpeg" class="obraz" alt="obrazek"> </div>
-                   <div id="picframe"><img src="pobrane.jpeg" class="obraz" alt="obrazek"> </div>
+                 <div class="guess_box"><img src="pobrane.jpeg" class="obraz" alt="obrazek"> </div>
+            <div class="guess_box"><img src="pobrane.jpeg" class="obraz" alt="obrazek"> </div>
+             <div class="guess_box"><img src="pobrane.jpeg" class="obraz" alt="obrazek"> </div>
+                   <div class="guess_box"><img src="pobrane.jpeg" class="obraz" alt="obrazek"> </div>
                    
                    
                </div>
@@ -84,10 +89,11 @@
             $(document).ready(function(){
                 
                 
-                $("p").click(function(){
+                $(".guess_box").click(function(){
                     
-                   alert("Pan dzwonił?"); 
-                });
+                   alert("Zostałęm kilinięty"); 
+                    
+                });// koniec funkcji click 
                 
                 
                 
