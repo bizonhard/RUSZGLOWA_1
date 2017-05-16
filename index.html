@@ -10,97 +10,11 @@
    
     <link rel="icon" href="favicon.ico">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 <title> animacje css</title> 
   
   
-  <style>
-    
-      .color{
-          
-          background-color: royalblue;
-        
-         padding: 10px; 
-         font-size: 20px;
-          text-align: center;
-          
-         margin-bottom: 200px;
-          
-       
-        justify-content: center;
-        align-items: center;
-      }
-      
-      
-      .color:hover {
-          
-          background-color: palevioletred;
-            border-bottom: solid 2px #000;
-      }
-      
-      
-      
-       .zakrec{
-          
-          background-color: royalblue;
-        
-         padding: 10px; 
-         font-size: 20px;
-          text-align: center;
-          
-         margin-bottom: 200px;
-          
-       
-        justify-content: center;
-        align-items: center;
-      }
-      
-      
-      .zakrec:hover {
-          
-          background-color: firebrick;
-          border-bottom: solid 2px #000;
-      }
-      
-      
-      
-      .wstaw{
-          
-          background-color: royalblue;
-        
-         padding: 10px; 
-         font-size: 20px;
-          text-align: center;
-          
-         margin-bottom: 200px;
-          
-       
-        justify-content: center;
-        align-items: center;
-      }
-      
-      
-      .wstaw:hover {
-          
-          background-color: cyan;
-          border-bottom: solid 2px #000;
-      }
-      
-      img {
-          
-          margin: 30px; 
-          padding: 
-      }
-      
-      #change_me {
-          
-          position: absolute; 
-          top: 100px;
-          left: 400px;
-          font: 24px;
-          font-family: arial;
-      }
-    
-    </style>
+ 
    
      
         
@@ -127,78 +41,11 @@
         
         </div> 
         
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script  src="js.js"></script>
         
-        <script>
-        
-            $(document).ready(function() {
-                
-                
-               
-                
-                
-                 //skrypt pod cztery nowe przyciski kierujące frazą "zrob coś ze mną"
-                
-                $("#move_up").click(function(){
-                       
-                       $("#change_me").animate({top:30},200);
-                       
-                   });//koniec
-                
-                $("#move_down").click(function(){
-                   
-                    $("#change_me").animate({top:500}, 2000);
-                });//koniec 
-                
-                $("#color").click(function(){
-                    
-                   $("#change_me").css("color","cyan"); 
-                });//koniec 
-                
-                $("#disappear").click(function(){
-                      $("#change_me").toggle("200");
-                    
-                });
-              
-                
-                
-                
-               $(".color").click(function(){
-                  $("h1").hide("slow");
-                   $("h2").hide("fast");
-                   $("img").slideUp();
-                   
-               });// koniec pierwszego przycisku 
-                
-                 $(".zakrec").click(function(){
-                     $("h1").css("color", "pink");
-                   $("h2").hide("fast");
-                    
-                }); // koniec funkcji zmiany koloru 
-                
-                $(".wstaw").click(function(){
-                     $("h1").toggle("slow");
-                      $("h2").toggle("slow");
-                   $("h2").css("border-bottom","cyan solid 2px");
-                    
-                    $("img").css("border","cyan solid 30px");
-                    $("img").toggle("slow");
-                   
-                    
-                }); 
-                
-                 //ukrywa przyciski na całej stronie 
-                
-                $(".strona").click(function(){
-                    
-                   $("#kontener").fadeOut("slow"); 
-                });
-                
-                
-            });// koniec dokumenty ready!
-               
-               
-         </script>
+       
         
         
         
