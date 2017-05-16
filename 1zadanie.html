@@ -13,11 +13,18 @@
     
     <style>
     
-        img {
+        .obraz {
             
             border: solid 10px cyan;
+            display: none;
         }
-    
+        
+        .obraz:hover {
+            
+            display: block;
+        }
+        
+        
     
     </style>
    
@@ -33,7 +40,7 @@
            
            <div id="kontener">
            
-           <buttom class="color">START</buttom><buttom class="zakrec">ZAKRĘĆ MNIE </buttom>
+               <button class="color">START</button>
            
            
            <img src="pobrane.jpeg" class="obraz" alt="obrazek">
@@ -43,8 +50,24 @@
         
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script  src="js.js"></script>
-        
+        <script>
+               
+            $(document).ready(function(){
+                
+                
+                $(".color").click(function(){
+                    
+                    $("img")
+                             .toggle("slow")
+                            .hidn("slow");       
+                    
+                })
+                
+             
+            });//koniec dokumentu 
+               
+               
+       </script>
        
         
         
