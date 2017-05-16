@@ -12,18 +12,30 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     
     <style>
-    
-        .obraz {
+        
+        img {
             
-            border: solid 10px cyan;
-            display: none;
+            width: 200px;
         }
         
-        .obraz:hover {
-            
+        #clickMe {
+            background: cyan;
+            padding: 20px;
+            text-align: center;
+            width: 205px;
             display: block;
+            border: 2px solid #000;
         }
         
+        
+        #picframe {
+            
+            background: cyan;
+            padding: 20px;
+            width: 205px;
+            display: none;
+            border: 2px solid #000;
+        }
         
     
     </style>
@@ -40,10 +52,13 @@
            
            <div id="kontener">
            
-               <button class="color">START</button>
+               <div id="clickMe"> Pokaż mi kudłatego przujaciela na dziś</div>
            
+           <div id="picframe">
+              <img src="pobrane.jpeg" class="obraz" alt="obrazek"> 
+               
+           </div>
            
-           <img src="pobrane.jpeg" class="obraz" alt="obrazek">
         
         
         </div> 
@@ -55,11 +70,11 @@
             $(document).ready(function(){
                 
                 
-                $(".color").click(function(){
+                $("#clickMe").click(function(){
                     
-                    $("img")
-                             .toggle("slow")
-                            .hidn("slow");       
+                    $("#picframe")
+                             .slideToggle("slow")
+                                
                     
                 })
                 
